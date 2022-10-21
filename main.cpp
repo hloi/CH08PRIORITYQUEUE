@@ -12,12 +12,21 @@ int main() {
     pq.push(89);
     cout << pq.size() << endl;
     vector<int> testq = pq.get_container();
+    cout << "print unordered heap." << endl;
     for (int i=0; i<pq.size(); i++) {
         cout << testq.at(i) << endl;
     }
-    for (int i=0; i<pq.size(); i++) {
+    cout << "print end unordered heap." << endl;
+//    int size = pq.size();
+//    for (int i=0; i<size; i++) {
+//        cout << pq.top() << endl;
+//        pq.pop();
+//    }
+
+    while (!pq.empty()) {
         cout << pq.top() << endl;
         pq.pop();
     }
+//    cout << pq.empty() << endl;
     return 0;
 }
